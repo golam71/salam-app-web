@@ -9,7 +9,7 @@
     "hardcore/ts",
     "plugin:astro/recommended"
   ],
-  "ignorePatterns": ["*.config.mjs", "*.prettierrc.js"],
+  "ignorePatterns": ["*.config.mjs", "*.prettierrc.js", "*.config.cjs"],
   "overrides": [
     {
       // Define the configuration for `.astro` file.
@@ -35,6 +35,7 @@
   "rules": {
     "import/exports-last": "off",
     "prettier/prettier": "off",
+    "putout/putout": "off",
     "react/jsx-filename-extension": "off"
   }
 }
