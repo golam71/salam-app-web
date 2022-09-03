@@ -36,6 +36,9 @@
     "import/exports-last": "off",
     "prettier/prettier": "off",
     "putout/putout": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "import/unambiguous": "off",
+    "import/order": "off",
+    "import/no-unresolved": "off"
   }
 }
