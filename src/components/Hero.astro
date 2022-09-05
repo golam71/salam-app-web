@@ -1,0 +1,101 @@
+---
+import { Image } from "@astrojs/image/components";
+---
+
+<!--
+  This example requires Tailwind CSS v2.0+
+
+  The alpine.js code is *NOT* production ready and is included to preview
+  possible interactivity
+-->
+<div class="bg-grey-500 pb-8 sm:pb-12 lg:pb-12">
+  <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
+    <div
+      class="mx-24 max-w-xl px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24"
+    >
+      <div class="basis-1/4">
+        <div class="mt-20">
+          <div class="mt-6">
+            <h1
+              class="text-8xl font-extrabold text-white tracking-tight sm:text-8xl ml-0"
+            >
+              AD-FREE.
+            </h1>
+            <h1
+              class="text-8xl font-extrabold text-white tracking-tight sm:text-8xl ml-12"
+            >
+              PRIVACY.
+            </h1>
+            <h1
+              class="text-8xl font-extrabold text-white tracking-tight sm:text-8xl ml-24"
+            >
+              FOREVER FREE.
+            </h1>
+            <p class="mt-6 text-xl text-white mx-56">NO COMPROMISES.</p>
+          </div>
+          <div class="flex items-end content-end">
+            <button
+              type="submit"
+              class="w-52 rounded-md border border-transparent px-5 py-3 bg-aquamarine text-base font-bold text-black shadow hover:bg-aquamarine-300 focus:outline-none focus:ring-2 focus:ring-aquamarine-900 focus:ring-offset-2 sm:px-6"
+              >Watch App Trailer</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+      <div
+        class="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+      >
+        <div class="hidden sm:block">
+          <div
+            class="absolute inset-y-0 left-1/2 w-screen bg-grey-500 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full"
+          >
+          </div>
+          <svg
+            class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0"
+            width="404"
+            height="392"
+            fill="none"
+            viewBox="0 0 404 392"
+          >
+            <defs>
+              <pattern
+                id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-grey-200"
+                  fill="currentColor"></rect>
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="392"
+              fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect>
+          </svg>
+        </div>
+        <div
+          class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12"
+        >
+          <Image
+            class="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-1/2 lg:max-w-none"
+            src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg"
+            alt=""
+            width={300}
+            height={600}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
