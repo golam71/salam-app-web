@@ -78,6 +78,11 @@ module.exports = {
         900: "#182923",
       },
     },
+    extend: {
+      textUnderlineOffset: {
+        10: "20px",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

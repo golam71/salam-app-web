@@ -1,10 +1,20 @@
 ---
 import Features from "@components/Features.astro";
 import Hero from "@components/Hero.astro";
+import WordBubble from "@components/WordBubble.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Salam App.">
   <Hero />
   <Features />
+  <WordBubble />
 </Layout>
+
+<style>
+  @tailwind base; /* Preflight will be injected here */
+
+  @tailwind components;
+
+  @tailwind utilities;
+</style>
