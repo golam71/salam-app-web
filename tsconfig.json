@@ -29,6 +29,7 @@
       "@elements/*": ["src/elements/*"],
       "@layouts/*": ["src/layouts/*"]
     },
+
     // Enable JSON imports.
     "resolveJsonModule": true,
     // Enable strict type checking.
