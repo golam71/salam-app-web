@@ -5,6 +5,7 @@ specifiers:
   "@astrojs/sitemap": ^1.0.0
   "@astrojs/solid-js": ^1.1.0
   "@astrojs/tailwind": ^1.0.0
+  "@formkit/auto-animate": 1.0.0-beta.3
   "@typescript-eslint/parser": ^5.36.2
   astro: ^1.1.7
   astro-compress: ^1.0.7
@@ -21,6 +22,7 @@ specifiers:
   solid-js: ^1.5.4
 
 dependencies:
+  "@formkit/auto-animate": 1.0.0-beta.3
   astro-icon: 0.7.3
 
 devDependencies:
@@ -807,6 +809,13 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@formkit/auto-animate/1.0.0-beta.3:
+    resolution:
+      {
+        integrity: sha512-glsi+ytwQpxT/Ctr9GtcIfVr4dO6mJ04mQbNU8MFSdCdqMopHtyfU5Fib0+9lNFIeR0luY4/0NW95/2R5pKsag==,
+      }
+    dev: false
 
   /@html-eslint/eslint-plugin/0.13.2:
     resolution:
