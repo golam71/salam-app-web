@@ -1,5 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
+import { Modal } from "../solid/Modal.jsx";
+import { Popup } from "../solid/Popup.jsx";
 ---
 
 <!--
@@ -34,11 +36,9 @@ import { Image } from "@astrojs/image/components";
             <p class="mt-2 text-4xl text-white content-end font-bold mb-5">
               NO COMPROMISES.
             </p>
-            <button
-              type="submit"
-              class="w-52 rounded-md border border-transparent px-5 py-3 bg-aquamarine text-base font-bold text-black shadow hover:bg-aquamarine-300 focus:outline-none focus:ring-2 focus:ring-aquamarine-900 focus:ring-offset-2 sm:px-6"
-              >Watch App Trailer</button
-            >
+
+            <Modal client:idle />
+            <Popup client:idle />
           </div>
         </div>
       </div>

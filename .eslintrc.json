@@ -9,7 +9,12 @@
     "hardcore/ts",
     "plugin:astro/recommended"
   ],
-  "ignorePatterns": ["*.config.mjs", "*.prettierrc.js", "*.config.cjs"],
+  "ignorePatterns": [
+    "*.config.mjs",
+    "*.prettierrc.js",
+    "*.config.cjs",
+    "*.jsx"
+  ],
   "overrides": [
     {
       // Define the configuration for `.astro` file.
