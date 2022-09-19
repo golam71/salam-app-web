@@ -1,7 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
 import { Modal } from "../solid/Modal.jsx";
-import { Popup } from "../solid/Popup.jsx";
 ---
 
 <!--
@@ -37,8 +36,7 @@ import { Popup } from "../solid/Popup.jsx";
               NO COMPROMISES.
             </p>
 
-            <Modal client:load />
-            <Popup client:load />
+            <Modal client:idle />
           </div>
         </div>
       </div>
