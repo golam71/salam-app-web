@@ -39,21 +39,13 @@ export const Modal = () => {
           role="presentation"
         >
           <div
-            class="relative w-auto p-5 bg-gray-500/30  items-end flex flex-col "
+            class="relative w-auto  bg-gray-500/30  items-end flex flex-col "
             role="dialog"
             aria-modal="true"
             tabindex="-1"
             ref={btnSaveEl}
           >
-            <button
-              class="p-2 m-2 bg-aquamarine"
-              aria-label="close modal"
-              onClick={onClickClose}
-            >
-              ✕
-            </button>
-
-            <iframe
+            {/* <iframe
               frameborder="0"
               scrolling="no"
               marginheight="0"
@@ -75,6 +67,29 @@ export const Modal = () => {
                   <a href="https://bettingutanspelpaus.co/">
                     bettingutanspelpaus
                   </a>
+                </small>
+              </div>
+            </iframe> */}
+            <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="1200.54"
+              height="800"
+              type="text/html"
+              src="https://www.youtube.com/embed/RpmqwNaGMyM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
+            >
+              <div>
+                <small>
+                  <a href="https://youtubeembedcode.com/nl/">
+                    youtubeembedcode.com/nl/
+                  </a>
+                </small>
+              </div>
+              <div>
+                <small>
+                  <a href="https://spelstopp.net/">https://spelstopp.net/</a>
                 </small>
               </div>
             </iframe>
