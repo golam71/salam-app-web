@@ -71,28 +71,13 @@ export const Modal = () => {
               </div>
             </iframe> */}
             <iframe
+              src="https://www.youtube-nocookie.com/embed/RpmqwNaGMyM?vq=hd1080&modestbranding=1"
+              width="800"
+              height="450"
+              title="A YouTube video"
               frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              width="1200.54"
-              height="800"
-              type="text/html"
-              src="https://www.youtube.com/embed/RpmqwNaGMyM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
-            >
-              <div>
-                <small>
-                  <a href="https://youtubeembedcode.com/nl/">
-                    youtubeembedcode.com/nl/
-                  </a>
-                </small>
-              </div>
-              <div>
-                <small>
-                  <a href="https://spelstopp.net/">https://spelstopp.net/</a>
-                </small>
-              </div>
-            </iframe>
+              allowfullscreen
+            />
           </div>
         </div>
       </Dismiss>
