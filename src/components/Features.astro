@@ -1,7 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import Icon from "astro-icon";
-import quranImage from "../../public/quran/quran1.png";
+import quranImage from "public/quran/quranPlayer.png";
 ---
 
 <div class="py-16 bg-smoke-400 overflow-hidden lg:py-24">
@@ -107,10 +107,14 @@ import quranImage from "../../public/quran/quran1.png";
         </p>
 
         <div class="mt-10 space-y-10">
-          <div class="relative">
+          <div
+            class="relative p-3"
+            id="verse"
+            onclick="changePic('verseByVerse.png' ,'verse')"
+          >
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
+                class="absolute mt-3 flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
               >
                 <Icon name="carbon:insert-page" height="30px" />
               </div>
@@ -124,10 +128,14 @@ import quranImage from "../../public/quran/quran1.png";
             </dd>
           </div>
 
-          <div class="relative">
+          <div
+            class="relative p-3"
+            id="mushaf"
+            onclick="changePic('quranMushaf.png' ,'mushaf')"
+          >
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
+                class="absolute mt-3 flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
               >
                 <Icon name="ic:sharp-menu-book" height="30px" />
               </div>
@@ -141,10 +149,14 @@ import quranImage from "../../public/quran/quran1.png";
             </dd>
           </div>
 
-          <div class="relative">
+          <div
+            class="relative p-3"
+            id="list"
+            onclick="changePic('quranList.png' ,'list')"
+          >
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
+                class="absolute mt-1 flex items-center justify-center h-12 w-12 rounded-md bg-aquamarine text-black"
               >
                 <Icon name="ic:sharp-format-list-bulleted" height="30px" />
               </div>
@@ -161,14 +173,45 @@ import quranImage from "../../public/quran/quran1.png";
 
       <div class="mt-10 -mx-4 relative lg:mt-0" aria-hidden="true">
         <Image
+          id="img"
           src={quranImage}
           alt="quranImage"
-          height={620}
-          width={300}
+          height={665}
+          width={345}
           class="relative mx-auto"
         />
       </div>
     </div>
-<!-- commented code was deleted from here -->
+    <!-- commented code was deleted from here -->
   </div>
 </div>
+
+<style>
+  .selected {
+    background-color: #40444e;
+    border-radius: 3vh;
+  }
+</style>
+
+<script is:inline>
+
+  function changePic(pic, id) {
+
+    document.getElementById("img").src =  "../quran/" + pic;
+    // document.getElementById("img").src = "../../public/quran/" + pic;
+    //when it is clicked take away the styles that were given on previous click
+
+    const idNames = ["verse", "list", "mushaf"]; 
+    //list of id names that can be selected this function below deletes the class that makes it look like its selecyed
+
+    idNames.forEach(function (item) {
+      document.getElementById(item).classList.remove("selected");
+    });
+
+    
+    document.getElementById(id).classList.toggle("selected");
+    
+  }
+
+
+</script>
