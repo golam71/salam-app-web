@@ -26,7 +26,8 @@ export const NavBar = (props) => {
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-4 justify-end items-center">
                 <a
-                  href="#"
+                  href="https://salam-app.canny.io/"
+                  target="_blank" 
                   class="text-swans-50 hover:bg-gray-700 hover:text-swans-500 px-3 py-2 rounded-md text-sm font-bold"
                 >
                   FEATURE REQUEST
