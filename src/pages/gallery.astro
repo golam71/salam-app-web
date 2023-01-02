@@ -1,24 +1,18 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { Image } from "@astrojs/image/components";
-
-import quran1 from "public/quran/quranList.png";
-import quran2 from "public/quran/quranMushaf.png";
-import quran3 from "public/quran/quranPlayer.png";
-import quran4 from "public/quran/verseByVerse.png";
-import quran5 from "public/quran/translation.png";
- 
-import theme1 from "public/themes/classic.png";
-import theme2 from "public/themes/default.png";
-import theme3 from "public/themes/pastel.png";
-import theme4 from "public/themes/Rashidun.png";
 ---
 
+<!-- the code is unreadble we will move it to jsx
+
+for now i can say that there are only 2 parts on is image and one the text on the left of image
+
+pagination and carousel is manages by swiper.js also note that thas it the patterb repeats -->
 <Layout title="Welcome to Salam App.">
+  <!-- quran part starts here  -->
   <div class="sm:flex sm:justify-around sm:m-6">
     <div>
       <div
-        class="text-center  text-7xl text-white font-bold mt-16 underline underline-offset-8 decoration-aquamarine"
+        class="text-center text-7xl text-white font-bold mt-16 underline underline-offset-8 decoration-aquamarine"
       >
         QURAN
       </div>
@@ -46,47 +40,42 @@ import theme4 from "public/themes/Rashidun.png";
     </div>
     <div class="swiper mySwiper mx-auto sm:mx-0 mt-12 flex-shrink-0">
       <div class="swiper-wrapper">
-        <Image
-          src={quran1}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="quran1.png"
+          alt="quran image"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={quran2}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="quran2.png"
+          alt="quran image"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={quran3}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="quran3.png"
+          alt="quran image"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={quran4}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="quran4.png"
+          alt="quran image"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={quran5}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="quran5.png"
+          alt="quran image"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-
+        <img
+          src="quran6.png"
+          alt="quran image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
       </div>
       <div class="swiper-pagination m-[-10px]"></div>
     </div>
@@ -95,9 +84,61 @@ import theme4 from "public/themes/Rashidun.png";
   <div class="sm:flex sm:flex-row-reverse sm:justify-around sm:m-6">
     <div>
       <div
-        class="text-center  text-7xl text-white font-bold mt-20 underline underline-offset-8 decoration-aquamarine"
+        class="text-center text-7xl text-white font-bold mt-20 underline underline-offset-8 decoration-aquamarine"
       >
         THEMES
+      </div>
+      <p class="text-white text-4xl font-semibold mt-10 ml-16">
+        Featuring 4 Themes
+      </p>
+      <ul class="mt-7 ml-28">
+        <li class="text-white text-2xl font-medium list-disc">Rshidun</li>
+        <li class="text-white text-2xl font-medium list-disc">Pastel</li>
+        <li class="text-white text-2xl font-medium list-disc">Classic</li>
+        <li class="text-white text-2xl font-medium list-disc">Edster</li>
+      </ul>
+
+      <p class="text-white text-4xl font-semibold mt-16 ml-16">
+        Adapting to prayer times 
+      </p>
+    </div>
+    <div class="swiper mySwiper mx-auto sm:mx-0 mt-12">
+      <div class="swiper-wrapper">
+        <img
+          src="quran1.png"
+          alt="quran image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
+        <img
+          src="quran1.png"
+          alt="quran image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
+        <img
+          src="quran1.png"
+          alt="quran image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
+        <img
+          src="quran1.png"
+          alt="quran image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
+      </div>
+      <div class="swiper-pagination m-[-10px]"></div>
+    </div>
+  </div>
+  <!-- this part is themes only below is prqyer times-->
+  <div class="sm:flex sm:flex-row sm:justify-around sm:m-6">
+    <div>
+      <div
+        class="text-center text-7xl text-white font-bold mt-20 underline underline-offset-10 decoration-aquamarine"
+      >
+        Prayer Times
       </div>
       <p class="text-white text-4xl font-semibold mt-10 ml-16">
         Featuring 4 Themes
@@ -115,43 +156,41 @@ import theme4 from "public/themes/Rashidun.png";
     </div>
     <div class="swiper mySwiper mx-auto sm:mx-0 mt-12">
       <div class="swiper-wrapper">
-        <Image
-          src={theme1}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="prayerTime1.png"
+          alt="image of prayer time"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={theme2}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="prayerTime2.png"
+          alt="image of prayer time"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={theme3}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="prayerTime3.png"
+          alt="image of prayer time"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
-        <Image
-          src={theme4}
-          alt="picture of quran"
-          height={665}
-          width={345}
+        <img
+          src="prayerTime4.png"
+          alt="image of prayer time"
           class="swiper-slide min-w-full"
-          max-height="700"
+          class="h-[665px] w-[352.5px]"
         />
+        <img
+        src="prayerTime5.png"
+        alt="image of prayer time"
+        class="swiper-slide min-w-full"
+        class="h-[665px] w-[352.5px]"
+      />
       </div>
       <div class="swiper-pagination m-[-10px]"></div>
     </div>
   </div>
-  <!-- this part is themes only below is -->
+  <!-- above is prayer times below is  -->
 </Layout>
 
 <style>
@@ -165,14 +204,13 @@ import theme4 from "public/themes/Rashidun.png";
 </style>
 
 <script>
-
   import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
   import "swiper/css";
   import "swiper/css/pagination";
   import "swiper/css/autoplay";
 
   // @ts-ignore
-  var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     autoplay: {
       delay: 2000,
       pauseOnMouseEnter: true,
@@ -181,7 +219,7 @@ import theme4 from "public/themes/Rashidun.png";
     preloadImages: false,
     lazy: true,
     pagination: {
-      el: ".swiper-pagination",
+     el: ".swiper-pagination",
       clickable: true,
     },
     modules: [Navigation, Pagination, Autoplay],
