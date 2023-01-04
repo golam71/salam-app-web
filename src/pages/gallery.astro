@@ -4,16 +4,14 @@ import Layout from "@layouts/Layout.astro";
 
 <!-- the code is unreadble we will move it to jsx
 
-for now i can say that there are only 2 parts on is image and one the text on the left of image
+for now i can say that there are only 2 parts on this , image and  the text on the left of image
 
-pagination and carousel is manages by swiper.js also note that thas it the patterb repeats -->
+pagination and carousel is managed by swiper.js also note that thas its pattern repeats -->
 <Layout title="Welcome to Salam App.">
   <!-- quran part starts here  -->
   <div class="sm:flex sm:justify-around sm:m-6">
     <div>
-      <div
-        class="text-center text-7xl text-white font-bold mt-16 underline underline-offset-8 decoration-aquamarine"
-      >
+      <div class="text-center text-7xl font-bold mt-16 text-aquamarine">
         QURAN
       </div>
       <p class="text-white text-4xl font-semibold mt-10 ml-16">
@@ -26,7 +24,6 @@ pagination and carousel is manages by swiper.js also note that thas it the patte
         <li class="text-white text-2xl font-medium list-disc">Mushaf Mode</li>
         <li class="text-white text-2xl font-medium list-disc">List Mode</li>
       </ul>
-
       <p class="text-white text-4xl font-semibold mt-16 ml-16">Including</p>
       <ul class="mt-7 ml-28">
         <li class="text-white text-2xl font-medium list-disc">Tafsir</li>
@@ -83,48 +80,73 @@ pagination and carousel is manages by swiper.js also note that thas it the patte
   <!--this part is quran only below is themes -->
   <div class="sm:flex sm:flex-row-reverse sm:justify-around sm:m-6">
     <div>
-      <div
-        class="text-center text-7xl text-white font-bold mt-20 underline underline-offset-8 decoration-aquamarine"
-      >
-        THEMES
+      <div class="text-center text-7xl text-aquamarine font-bold mt-16">
+        HADITH
       </div>
       <p class="text-white text-4xl font-semibold mt-10 ml-16">
-        Featuring 4 Themes
+        7 Sahih books of hadith and more
       </p>
       <ul class="mt-7 ml-28">
-        <li class="text-white text-2xl font-medium list-disc">Rshidun</li>
-        <li class="text-white text-2xl font-medium list-disc">Pastel</li>
-        <li class="text-white text-2xl font-medium list-disc">Classic</li>
-        <li class="text-white text-2xl font-medium list-disc">Edster</li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Sahih al-Bukhari
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">Sahih Muslim.</li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Sunan Abu Dawood.
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Sunan al-Tirmidhi.
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Sunan al-Tirmidhi.
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Sunan ibn Majah.
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Hisn Al Muslim
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Bulugh Al Maram
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Al Shama'il Al Muhammadiyah.
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">Musnad Ahmad</li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Riyadh As Salihin
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          AL Adam Al Mufrad
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Mishkat Al Masabih
+        </li>
       </ul>
-
-      <p class="text-white text-4xl font-semibold mt-16 ml-16">
-        Adapting to prayer times 
-      </p>
     </div>
     <div class="swiper mySwiper mx-auto sm:mx-0 mt-12">
       <div class="swiper-wrapper">
         <img
-          src="quran1.png"
-          alt="quran image"
+          src="hadith1.png"
+          alt="hadith image"
           class="swiper-slide min-w-full"
           class="h-[665px] w-[352.5px]"
         />
         <img
-          src="quran1.png"
-          alt="quran image"
+          src="hadith2.png"
+          alt="hadith image"
           class="swiper-slide min-w-full"
           class="h-[665px] w-[352.5px]"
         />
         <img
-          src="quran1.png"
-          alt="quran image"
+          src="hadith3.png"
+          alt="hadith image"
           class="swiper-slide min-w-full"
           class="h-[665px] w-[352.5px]"
         />
         <img
-          src="quran1.png"
-          alt="quran image"
+          src="hadith4.png"
+          alt="hadith image"
           class="swiper-slide min-w-full"
           class="h-[665px] w-[352.5px]"
         />
@@ -135,24 +157,35 @@ pagination and carousel is manages by swiper.js also note that thas it the patte
   <!-- this part is themes only below is prqyer times-->
   <div class="sm:flex sm:flex-row sm:justify-around sm:m-6">
     <div>
-      <div
-        class="text-center text-7xl text-white font-bold mt-20 underline underline-offset-10 decoration-aquamarine"
-      >
+      <div class="text-center text-6xl text-aquamarine font-bold mt-20">
         Prayer Times
       </div>
-      <p class="text-white text-4xl font-semibold mt-10 ml-16">
-        Featuring 4 Themes
-      </p>
+      <p class="text-white text-4xl font-semibold mt-10 ml-16">Home Page Has</p>
       <ul class="mt-7 ml-28">
+        <li class="text-white text-2xl font-medium list-disc">
+          Accurate Prayer Times
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Tahajjud Tiime
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Adhan Notification
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Hijri Date and Timer
+        </li>
+      </ul>
+      <p class="text-white text-4xl font-semibold mt-8 ml-16">
+        Featuring 5 Themes
+      </p>
+
+      <ul class="mt-7 ml-28">
+        <li class="text-white text-2xl font-medium list-disc">Default</li>
         <li class="text-white text-2xl font-medium list-disc">Rshidun</li>
         <li class="text-white text-2xl font-medium list-disc">Pastel</li>
         <li class="text-white text-2xl font-medium list-disc">Classic</li>
-        <li class="text-white text-2xl font-medium list-disc">Edster</li>
+        <li class="text-white text-2xl font-medium list-disc">Ayyubid</li>
       </ul>
-
-      <p class="text-white text-4xl font-semibold mt-16 ml-16">
-        Adapting to prayer times
-      </p>
     </div>
     <div class="swiper mySwiper mx-auto sm:mx-0 mt-12">
       <div class="swiper-wrapper">
@@ -181,16 +214,53 @@ pagination and carousel is manages by swiper.js also note that thas it the patte
           class="h-[665px] w-[352.5px]"
         />
         <img
-        src="prayerTime5.png"
-        alt="image of prayer time"
-        class="swiper-slide min-w-full"
-        class="h-[665px] w-[352.5px]"
-      />
+          src="prayerTime5.png"
+          alt="image of prayer time"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
       </div>
       <div class="swiper-pagination m-[-10px]"></div>
     </div>
   </div>
-  <!-- above is prayer times below is  -->
+  <!-- above is prayer times below is  the other cool stuff like tafsir , dua ,calender-->
+
+  <div class="sm:flex sm:flex-row-reverse sm:justify-around sm:m-6">
+    <div>
+      <div class="text-center text-7xl text-aquamarine font-bold mt-16">
+        And More
+      </div>
+      <p class="text-white text-4xl font-semibold mt-10 ml-16">miscellaneous</p>
+      <ul class="mt-7 ml-28">
+        <li class="text-white text-2xl font-medium list-disc">
+          99 Names of Allah
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+         Prayer Tracker
+      </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Qibla Compass
+        </li>
+        <li class="text-white text-2xl font-medium list-disc">
+          Islamic Calender
+        </li>
+        
+      </ul>
+    </div>
+    <div class="swiper mySwiper mx-auto sm:mx-0 mt-12 min-w-[352.5px]">
+      <div class="swiper-wrapper min-w-full">
+        <img
+          src="hadith1.png"
+          alt="hadith image"
+          class="swiper-slide min-w-full"
+          class="h-[665px] w-[352.5px]"
+        />
+      </div>
+      <div class="swiper-pagination m-[-10px]"></div>
+    </div>
+  </div>
+
+  <!-- this is the end of the cool features     -->
 </Layout>
 
 <style>
@@ -209,19 +279,21 @@ pagination and carousel is manages by swiper.js also note that thas it the patte
   import "swiper/css/pagination";
   import "swiper/css/autoplay";
 
-  // @ts-ignore
-let swiper = new Swiper(".mySwiper", {
+  const swiper = new Swiper(".mySwiper", {
     autoplay: {
       delay: 2000,
       pauseOnMouseEnter: true,
     },
+
     loop: true,
     preloadImages: false,
     lazy: true,
+
     pagination: {
-     el: ".swiper-pagination",
+      el: ".swiper-pagination",
       clickable: true,
     },
+
     modules: [Navigation, Pagination, Autoplay],
   });
 </script>
