@@ -62,12 +62,11 @@ export function Testimonials() {
             id="testimonials-title"
             className="font-display font-bold text-3xl tracking-tight text-white sm:text-4xl"
           >
-            Loved by businesses worldwide.
+            Loved by Muslims Worldwide.
           </h2>
           <p className="mt-4 text-white text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            Our app is simple, focused on prayer, and helps users deepen their
+            spiritual practice. It is easy to use and free of distractions.
           </p>
         </div>
 
