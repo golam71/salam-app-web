@@ -2,11 +2,9 @@
 import Layout from "@layouts/Layout.astro";
 ---
 
-<!-- the code is unreadble we will move it to jsx
 
-for now i can say that there are only 2 parts on this , image and  the text on the left of image
 
-pagination and carousel is managed by swiper.js also note that thas its pattern repeats -->
+<meta name="description" content="photos of salam app, gallery of salam app ,Salam App, salam app, muslim prayer app">
 <Layout title="Welcome to Salam App.">
   <!-- quran part starts here  -->
   <div class="sm:flex sm:justify-around sm:m-6">
@@ -274,11 +272,14 @@ pagination and carousel is managed by swiper.js also note that thas its pattern 
 </style>
 
 <script>
+  // eslint-disable-next-line import/no-named-as-default
   import Swiper, { Navigation, Pagination, Autoplay } from "swiper";
   import "swiper/css";
   import "swiper/css/pagination";
   import "swiper/css/autoplay";
 
+    
+  // eslint-disable-next-line no-unused-vars
   const swiper = new Swiper(".mySwiper", {
     autoplay: {
       delay: 2000,
