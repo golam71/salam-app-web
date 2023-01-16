@@ -59,7 +59,7 @@ export function Testimonials() {
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl md:text-center">
           <h2
-            id="testimonials-title"
+            id="testimonials-semi-title"
             className="font-display font-bold text-3xl tracking-tight text-white sm:text-4xl"
           >
             Loved by Muslims Worldwide.
