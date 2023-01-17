@@ -8,7 +8,7 @@ export const NavBar = (props) => {
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <a href="/">
+              <a href="/" aria-label="Link to homepage">
                 <svg
                   className="text-swans-50"
                   xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,7 @@ export const NavBar = (props) => {
               class="inline-flex items-center px-6 py-2 border border-transparent shadow-sm text-base font-bold rounded-md text-black bg-aquamarine hover:bg-aquamarine-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aquamarine-300"
               aria-controls="mobile-menu"
               aria-expanded="false"
+              aria-label="mobile-menu"
               onClick={() => setShow(!show())}
             >
               {!show() ? (
