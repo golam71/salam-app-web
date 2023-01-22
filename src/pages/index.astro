@@ -3,8 +3,8 @@ import Features from "@components/Features.astro";
 import Hero from "@components/Hero.astro";
 import Stats from "@components/Stats.astro";
 import Layout from "@layouts/Layout.astro";
+import WordBubble from "src/components/WordBubble.astro";
 import { Testimonials } from "src/solid/Testimonials";
-import WordBubble from "src/components/WordBubble.astro"
 ---
 
 <meta name="description" content=", Salam App,Download salam app,salam app,Muslim prayer app,Islamic app,homepage of salamapp,salam.app">
@@ -12,13 +12,11 @@ import WordBubble from "src/components/WordBubble.astro"
   <Hero />
   <WordBubble />
   <Features />
-  <!-- <CompassBox /> -->
   <Stats />
   <Testimonials client:idle />
 </Layout>
 
 <style>
-
   html {
     scroll-behavior: smooth;
   }
