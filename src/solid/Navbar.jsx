@@ -9,7 +9,7 @@ export const NavBar = (props) => {
           <div class="flex items-center">
             <div class="flex-shrink-0">
               <a href="/" aria-label="Link to homepage">
-                <img class="h-[45px]" src="../../public/favicon.svg" alt="salam app logo" />
+                <img class="h-[45px]" src="../../public/favicon.svg" alt="" />
               </a>
             </div>
           </div>
@@ -37,10 +37,12 @@ export const NavBar = (props) => {
                       ></path>
                     </svg>
                   }
+                  <p className="mb-1 ml-2">menu</p>
                 </>
               ) : (
-                <>
+                <>       
                   {
+                    
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="1em"
@@ -53,6 +55,7 @@ export const NavBar = (props) => {
                       ></path>
                     </svg>
                   }
+           
                 </>
               )}
             </button>
