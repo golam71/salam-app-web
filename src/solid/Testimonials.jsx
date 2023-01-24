@@ -5,6 +5,7 @@ const testimonials = [
         "Love this app with the customability of the calculation methods and madhab selection. The Qibla compass is accurate for me. The design, aesthetics and themes are amazing.",
       author: {
         name: "Mohammed Khan",
+        image : "person1.png"
       },
     },
     {
@@ -12,6 +13,7 @@ const testimonials = [
         "For first release it may seem bare bones compared to others.. but don’t let that fool you, this is robust and offers everything WITHOUT ads!!!",
       author: {
         name: " sajjz",
+        image : "person2.png"
       },
     },
   ],
@@ -21,6 +23,7 @@ const testimonials = [
         "This was an amazing app and beautifully made MashAllah! The design and UI of the app is very elegant and the Quran with the translations and Hadiths are an amazing addition as well considering it’s all ad-free.",
       author: {
         name: "FahmiK78",
+        image : "person3.png"
       },
     },
     {
@@ -28,6 +31,7 @@ const testimonials = [
         "This actually really helps me study Quran and it even has an interactive tool to point you in the direction of Mecca! All without advertisements it’s super great, bless your hearts Salam team!",
       author: {
         name: "Cowboy7657",
+        image : "person4.png"
       },
     },
   ],
@@ -37,6 +41,7 @@ const testimonials = [
         "Phenomenal. It really is ad-free and the features are really cool. It have qibla direction, Quran, and even salah tracker. I am quite impressed at what one can do for free.",
       author: {
         name: "Firdaus Safari",
+        image : "person5.png"
       },
     },
     {
@@ -44,6 +49,7 @@ const testimonials = [
         "Alhamdulillah, Amazing App. Have all the basic and important information. Looking forward to all the future improvements. May Allah ease.",
       author: {
         name: "Muhammad Faiz",
+        image : "person6.png"
       },
     },
   ],
@@ -91,12 +97,12 @@ export function Testimonials() {
                                 {testimonial.author.name}
                               </div>
                             </div>
-                            <div className="h-14 w-14 overflow-hidden rounded-full bg-slate-50">
+                            <div className="h-8 w-8 overflow-hidden rounded-full bg-slate-50">
                               <img
                                 src={testimonial.author.image}
                                 alt="image"
-                                height={56}
-                                width={56}
+                                height={32}
+                                width={32}
                               />
                             </div>
                           </figcaption>
