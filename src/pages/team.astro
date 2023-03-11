@@ -2,527 +2,390 @@
 import Layout from "@layouts/Layout.astro";
 import CiDiscord from "~icons/ci/discord";
 import CiGithub from "~icons/ci/github";
-import CiWebsite from "~icons/mdi/world-wide-web"
+import CiWebsite from "~icons/mdi/world-wide-web";
+
+const developers = [
+  {
+    name: "Saad",
+    position: "Head App Developer",
+    image: "saad.png",
+
+    flags: [
+      {
+        src: "pakistan.svg",
+
+        alt: "Pakistan flag",
+      },
+      {
+        src: "canada.svg",
+
+        alt: "Canada flag",
+      },
+    ],
+
+    bio: "Computer Science graduate trying to serve the Ummah with his knowledge and skills. Also loves RuneScape (Oldschool).",
+
+    links: [
+      {
+        github: "https://github.com/saad197",
+      },
+      {
+        discord: "https://discord.com/users/692505234571788359",
+      },
+    ],
+  },
+  {
+    name: "Ismail Fateen",
+    position: "App Developer",
+    image: "ismail.png",
+
+    flags: [
+      {
+        src: "egypt.svg",
+        alt: "egypt flag",
+      },
+    ],
+
+    bio: "I'm 15 years old―new to the programming world and always learning! ",
+
+    links: [
+      {
+        github: "https://github.com/ismailfateen",
+      },
+      {
+        discord: "https://discord.com/users/695148745184116736",
+      },
+    ],
+  },
+  {
+    name: "Deadly Razer ",
+    position: "App Developer",
+    image: "razer.png",
+
+    flags: [
+      {
+        src: "pakistan.svg",
+        alt: "pakistan flag",
+      },
+    ],
+
+    bio: "Learning app and web development.",
+
+    links: [
+      {
+        github: "https://github.com/deadlyrazer",
+      },
+      {
+        discord: "https://discord.com/users/362484698292813825",
+      },
+    ],
+  },
+  {
+    name: "Edster",
+    position: "App Developer, UI Developer",
+    image: "edster.png",
+
+    flags: [
+      {
+        src: "turkey.svg",
+        alt: "turkey flag",
+      },
+      {
+        src: "netherlands.svg",
+        alt: "netherlands flag",
+      },
+    ],
+
+    bio: "Apparently the artist for Salam app.",
+
+    links: [
+      {
+        discord: "https://discord.com/users/154946343662518273",
+      },
+    ],
+  },
+  {
+    name: "Sauood al-Mashreqi",
+    position: "App Developer",
+    image: "saud.png",
+
+    flags: [
+      {
+        src: "kashmir.svg",
+        alt: "kashmir flag",
+      },
+    ],
+
+    bio: "What to put?",
+
+    links: [
+      {
+        website: "https://almashreqi.tech/",
+      },
+      {
+        github: "https://github.com/AlMashreqi",
+      },
+      {
+        discord: "https://discord.com/users/777202501283610624",
+      },
+    ],
+  },
+  {
+    name: "Muntasir Enam ",
+    position: "App Developer",
+    image: "muntasir.png",
+
+    flags: [
+      {
+        src: "saudi.svg",
+        alt: "saudi flag",
+      },
+      {
+        src: "bangladesh.svg",
+        alt: "bangladesh flag",
+      },
+    ],
+
+    bio: "Developer, Gamer, Moderator at MGL and junior dev at Salamlabs. ",
+
+    links: [
+      {
+        website: "",
+      },
+      {
+        github: "https://github.com/Muntasir2001",
+      },
+      {
+        discord: "https://discord.com/users/374230181889572876",
+      },
+    ],
+  },
+  {
+    name: "Trident",
+    position: "App Developer",
+    image: "trident.png",
+
+    flags: [
+      {
+        src: "pakistan.svg",
+        alt: "pakistan flag",
+      },
+    ],
+
+    bio: "Hi, I am a gamer.",
+
+    links: [
+      {
+        github: "https://github.com/Tr1d3nt",
+      },
+      {
+        discord: "https://discord.com/users/1066411541664108596",
+      },
+    ],
+  },
+  {
+    name: "BalkoBalko",
+    position: "App Developer, Backend Developer",
+    image: "balkobalko.png",
+
+    flags: [
+      {
+        src: "pakistan.svg",
+        alt: "pakistan flag",
+      },
+    ],
+
+    bio: "I love working on cool things. I slightly contributed to the app.",
+
+    links: [
+      {
+        github: "https://github.com/BalkoBalkho",
+      },
+      {
+        discord: "https://discord.com/users/475999932264874014",
+      },
+    ],
+  },
+  {
+    name: "Ajmain",
+    position: "Content Writer",
+    image: "ajmain.png",
+
+    flags: [
+      {
+        src: "bangladesh.svg",
+        alt: "bangladesh flag",
+      },
+    ],
+
+    bio: "History text writer for Salam App Themes, Salam app tester.",
+
+    links: [
+      {
+        discord: "https://discord.com/users/838762527700549642",
+      },
+    ],
+  },
+  {
+    name: "Nok",
+    position: "Content Writer",
+    image: "nok.png",
+
+    flags: [
+      {
+        src: "egypt.svg",
+        alt: "egypt flag",
+      },
+      {
+        src: "canada.svg",
+        alt: "canada flag",
+      },
+    ],
+
+    bio: "Person of lesser than average importance who, on occasion, may perform some tasks.",
+
+    links: [
+      {
+        discord: "https://discord.com/users/261321536701595648",
+      },
+    ],
+  },
+  {
+    name: "Spark",
+    position: "Web Developer",
+    image: "spark.png",
+
+    flags: [
+      {
+        src: "india.svg",
+        alt: "india flag",
+      },
+    ],
+
+    bio: "A backend developer interested in things.",
+
+    links: [
+      {
+        github: "https://github.com/spa5k/",
+      },
+      {
+        discord: "https://discord.com/users/184024387282927616",
+      },
+    ],
+  },
+  {
+    name: "Golam",
+    position: "Web Developer",
+    image: "golam.png",
+
+    flags: [
+      {
+        src: "bangladesh.svg",
+        alt: "bangladesh flag",
+      },
+    ],
+
+    bio: "I write code and want to make opensource islamic softwere.",
+
+    links: [
+      {
+        github: "https://github.com/golam71/",
+      },
+      {
+        discord: "https://discord.com/users/753155767615356929",
+      },
+    ],
+  },
+];
 ---
 
-<meta
-  name="description"
-  content="Team behind salam app"
-/>
+<meta name="description" content="Team behind salam app" />
 <Layout title="Welcome to Salam App.">
   <section class="text-white body-font px-10">
-    <div class="container px-5 py-16 mx-auto">
-      <div class="flex flex-col text-center w-full mb-20">
-        <h1
-          class="text-3xl font-extrabold tracking-tight title-font mb-4 text-white sm:text-4xl"
-        >
-          OUR TEAM!
-        </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Muslims, from across the world, for the sake of Islam!
-        </p>
+    <div class="flex justify-center">
+      <div
+        class="my-5 flex justify-around space-x-2 p-3 w-full sm:w-4/6 rounded-full border border-aquamarine"
+      >
+        <button class="p-1 hover:text-aquamarine" onclick="showDevelopers('All')">All</button>
+        <button class="p-1 hover:text-aquamarine" onclick="showDevelopers('App')">App</button>
+        <button class="p-1 hover:text-aquamarine" onclick="showDevelopers('Web')">Web</button>
+        <button class="p-1 hover:text-aquamarine" onclick="showDevelopers('UI')">Design</button>
+        <button class="p-1 hover:text-aquamarine" onclick="showDevelopers('Writer')">Text</button>
       </div>
-      <div class="flex flex-wrap -m-4">
-        <div class="p-4 lg:w-1/4 md:w-1/2">
-          <div class="h-full flex flex-col items-center text-center">
-            <img
-              src="saad.png"
-              class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-              alt="developers profile picture"
-            />
-            <div class="w-full mt-10">
-              <h2 class="title-font font-medium text-lg text-white">Saad</h2>
+    </div>
 
-              <div class="flex w-[70px] mx-auto m-2">
-                <img
-                  src="pakistan.svg"
-                  class="h-[25px] w-[35px] mx-1"
-                  alt="pakistam flag"
-                />
+    <div class="flex flex-wrap m-4 p-5">
+      {
 
-                <img
-                  src="canada.svg"
-                  class="h-[25px] w-[35px] mx-1"
-                  alt="canada flag"
-                />
-              </div>
 
-              <h3 class="text-gray-400 mb-3">Head App Developer</h3>
-              <p class="mb-4">
-                Computer Science graduate trying to serve the Ummah with his
-                knowledge and skills. Also loves RuneScape (Oldschool).
-              </p>
-              <span class="inline-flex">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://github.com/saad197"
-                >
-                  <CiGithub />
-                </a>
-                <a
-                  class="ml-2 text-white"
-                  target="_blank"
-                  href="https://discord.com/users/692505234571788359"
-                >
-                  <CiDiscord />
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/4 md:w-1/2">
-          <div class="h-full flex flex-col items-center text-center">
-            <img
-              src="ismail.png"
-              class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-              alt="developers profile picture"
-            />
-            <div class="w-full mt-10">
-              <h2 class="title-font font-medium text-lg text-white">
-                Ismail Fateen
-              </h2>
+
+        developers.map((developer) => (
+
+
+
+
+
+          <div position={developer.position} id="developer-card" class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
               <img
-                src="egypt.svg"
-                class="h-[25px] w-[35px] mx-auto m-2"
-                alt="egypt flag"
+                src={developer.image}
+                class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                alt={`${developer.name}'s profile picture`}
               />
-              <h3 class="text-gray-400 mb-3">App Developer</h3>
-              <p class="mb-4">
-                I'm 15 years old―new to the programming world and always
-                learning!
-              </p>
-              <span class="inline-flex">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://github.com/ismailfateen"
+              <div class="w-full mt-10">
+                <h2 class="title-font font-medium text-lg text-white">
+                  {developer.name}
+                </h2>
+
+                <div
+                  class={`flex w-${
+                    developer.flags.length === 2
+                      ? "[70px] flex justify-center"
+                      : "[35px]"
+                  } mx-auto `}
                 >
-                  <CiGithub />
-                </a>
-                <a
-                  class="ml-2 text-white"
-                  target="_blank"
-                  href="https://discord.com/users/695148745184116736"
-                >
-                  <CiDiscord />
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/4 md:w-1/2">
-          <div class="h-full flex flex-col items-center text-center">
-            <img
-              src="razer.png"
-              class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-              alt="developers profile picture"
-            />
-            <div class="w-full mt-10">
-              <h2 class="title-font font-medium text-lg text-white">
-                Deadly Razer
-              </h2>
-              <img
-                src="pakistan.svg"
-                class="h-[25px] w-[35px] mx-auto m-2"
-                alt="flag of pakistan"
-              />
-              <h3 class="text-gray-400 mb-3">App Developer</h3>
-              <p class="mb-4">
-                Learning app and web development.
-              </p>
-              <span class="inline-flex">
-                <a
-                  class="text-white"
-                  target="_blank"
-                  href="https://github.com/deadlyrazer"
-                >
-                  <CiGithub />
-                </a>
-                <a
-                  class="ml-2 text-white"
-                  target="_blank"
-                  href="https://discord.com/users/362484698292813825"
-                >
-                  <CiDiscord />
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 lg:w-1/4 md:w-1/2">
-          <div class="h-full flex flex-col items-center text-center">
-            <img
-              src="edster.png"
-              class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-              alt="developers profile picture"
-            />
-            <div class="w-full mt-10">
-              <h2 class="title-font font-medium text-lg text-white">Edster</h2>
-              <div class="flex w-[70px] mx-auto m-2">
-                <img
-                  src="turkey.svg"
-                  class="h-[25px] w-[35px] mx-1"
-                  alt="turkey flag"
-                />
- 
-                <img
-                  src="netherlands.svg"
-                  class="h-[25px] w-[35px] mx-1"
-                  alt="netherlands flag"
-                />
+                  {developer.flags.map((flag) => (
+                    <img
+                      src={flag.src}
+                      class="h-[25px] w-[35px] mx-1 m-2"
+                      alt={flag.alt}
+                    />
+                  ))}
+                </div>
+
+                <h3 class="text-gray-400 mb-3">{developer.position}</h3>
+                <p class="mb-4">{developer.bio}</p>
+                <span class="inline-flex">
+                  {developer.links.map((link) => (
+                    <a
+                      key={Object.values(link)[0]}
+                      class="text-white m-1"
+                      target="_blank"
+                      href={Object.values(link)[0]}
+                    >
+                      {Object.keys(link)[0] === "github" ? (
+                        <CiGithub />
+                      ) : Object.keys(link)[0] === "discord" ? (
+                        <CiDiscord />
+                      ) : Object.keys(link)[0] === "website" ? (
+                        <CiWebsite />
+                      ) : null}
+                    </a>
+                  ))}
+                </span>
               </div>
             </div>
-            <h3 class="text-gray-500 mb-3">App Developer, UI Developer</h3>
-            <p class="mb-4">
-              Apparently the artist for Salam app.
-            </p>
-            <span class="inline-flex">
-              <a class="ml-2 text-white"
-              target = "_blank"
-              href="https://discord.com/users/154946343662518273"
-              >
-                  <CiDiscord />
-                </a>
-            </span>
           </div>
-        </div>
-      </div>
+
+
+
+
+
+
+
+        ))
+      }
     </div>
-
-    <!-- the first row is upper stuff now begins the second row -->
-
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 mx-auto lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="saud.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <!-- <div class="flex justify-center items-center"> -->
-            <h2 class="title-font font-medium text-lg text-white">
-              Sauood al-Mashreqi
-            </h2>
-
-            <img
-              src="kashmir.svg"
-              class="h-[25px] w-[35px] mx-auto m-2"
-              alt="kashmir flag"
-            />
-            <h3 class="text-gray-400 mb-3">App Developer</h3>
-            <p class="mb-4">What to put?</p>
-            <span class="flex  justify-center space-x-2  ">
-              <a
-              class="text-white"
-              target="_blank"
-              href="https://almashreqi.tech/"
-            >
-              <CiWebsite />
-            </a>
-              <a
-                class="text-white"
-                target="_blank"
-                href="https://github.com/AlMashreqi"
-              >
-                <CiGithub />
-              </a>
-              <a
-                class="text-white"
-                target="_blank"
-                href="https://discord.com/users/777202501283610624"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4  lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="muntasir.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">
-              Muntasir Enam
-            </h2>
-
-            <div class="flex w-[70px] mx-auto m-2">
-              <img
-                src="saudi.svg"
-                class="h-[25px] w-[35px] mx-1"
-                alt="saudi flag"
-              /> 
-              <img
-                src="bangladesh.svg"
-                class="h-[25px] w-[35px] mx-1"
-                alt="bangladesh flag"
-              />
-            </div>
-
-            <h3 class="text-gray-400 mb-3">App Developer</h3>
-            <p class="mb-4">
-              Developer, Gamer, Moderator at MGL and junior dev at Salamlabs.
-            </p>
-            <span class="inline-flex">
-
-              <a
-                class="text-white"
-                target="_blank"
-                href="https://github.com/Muntasir2001"
-              >
-                <CiGithub />
-              </a>
-              <a
-                class="ml-2 text-white"
-                target="_blank"
-                href="https://discord.com/users/374230181889572876"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 mx-auto lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="trident.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">Trident</h2>
-
-            <img
-              src="pakistan.svg"
-              class="h-[25px] w-[35px] mx-auto m-2"
-              alt="pakistan flag"
-            />
-            <h3 class="text-gray-400 mb-3">App Developer</h3>
-            <p class="mb-4">Hi, I am a gamer.</p>
-            <span class="inline-flex">
-              <a
-                class="ml-2 text-white"
-                target="_blank"
-                href="https://github.com/Tr1d3nt"
-              >
-                <CiGithub />
-              </a>
-              <a
-                class="ml-2 text-white"
-                target="_blank"
-                href="https://discord.com/users/1066411541664108596"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="balkobalko.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">
-              BalkoBalko
-            </h2>
-
-            <img
-              src="pakistan.svg"
-              class="h-[25px] w-[35px] mx-auto m-2"
-              alt="pakistan flag"
-            />
-          </div>
-          <h3 class="text-gray-500 mb-3">App Developer, Backend Developer</h3>
-          <p class="mb-4">
-            I love working on cool things. I slightly contributed to the app.
-          </p>
-          <span class="inline-flex">
-            <a
-              class="ml-2 text-white"
-              target="_blank"
-              href="https://github.com/BalkoBalkho"
-            >
-              <CiGithub />
-            </a>
-            <a
-              class="ml-2 text-white"
-              target="_blank"
-              href="https://discord.com/users/475999932264874014"
-            >
-              <CiDiscord />
-            </a>
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- the second row ends here and the third row starts here
- -->
-
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 mx-auto lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="ajmain.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">Ajmain</h2>
-            <img
-            src="bangladesh.svg"
-            class="h-[25px] w-[35px] mx-auto m-2"
-            alt="bangladesh flag"
-          />
-            <h3 class="text-gray-400 mb-3">Content Writer</h3>
-            <p class="mb-4">History text writer for Salam App Themes, Salam app tester.</p>
-            <span class="inline-flex">
-
-              <a class="ml-2 text-white"
-              target="_blank"
-              href="https://discord.com/users/838762527700549642"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="p-4 lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="nok.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">
-              Nok
-            </h2>
-
-
-            <div class="flex w-[70px] mx-auto m-2">
-              <img
-                src="egypt.svg"
-                class="h-[25px] w-[35px] mx-1"
-                alt="egypt flag"
-              />
-              <img
-                src="canada.svg"
-                class="h-[25px] w-[35px] mx-1"
-                alt="canada flag"
-              />
-            </div>
-
-            <h3 class="text-gray-400 mb-3">Content Writer</h3>
-            <p class="mb-4">
-              Person of lesser than average importance who, on occasion, may perform some tasks.
-            </p>
-            <span class="inline-flex">
-
-              <a class="ml-2 text-white"
-              target="_blank"
-              href="https://discord.com/users/261321536701595648"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-
-
-      
-      <div class="p-4 mx-auto lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="spark.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">Spark</h2>
-            <img
-            src="india.svg"
-            class="h-[25px] w-[35px] mx-auto m-2"
-            alt="india flag"
-          />
-            <h3 class="text-gray-400 mb-3">Web Developer</h3>
-            <p class="mb-4">A backend developer interested in things.</p>
-            <span class="inline-flex">
-              <a class="text-white"
-              target="_blank"
-              href="https://github.com/spa5k/"
-              >
-                <CiGithub />
-              </a>
-              <a class="ml-2 text-white"
-              target="_blank"
-              href="https://discord.com/users/184024387282927616"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      
-      
-      <div class="p-4 lg:w-1/4 md:w-1/2">
-        <div class="h-full flex flex-col items-center text-center">
-          <img
-            src="golam.png"
-            class="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-            alt="developers profile picture"
-          />
-          <div class="w-full mt-10">
-            <h2 class="title-font font-medium text-lg text-white">Golam</h2>
-            <img
-            src="bangladesh.svg"
-            class="h-[25px] w-[35px] mx-auto m-2"
-            alt="bangladesh flag"
-          />
-
-            <h3 class="text-gray-400 mb-3">Web Developer</h3>
-            <p class="mb-4">
-              I write code and want to make opensource islamic softwere.
-            </p>
-            <span class="inline-flex">
-              <a class="text-white"
-              target="_blank"
-              href="https://github.com/golam71/"
-              >
-                <CiGithub />
-              </a>
-              <a class="ml-2 text-white"
-              target="_blank"
-              href="https://discord.com/users/753155767615356929"
-              >
-                <CiDiscord />
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- the third row ends here 
- -->
-   
-
   </section>
 
   <style>
@@ -531,4 +394,28 @@ import CiWebsite from "~icons/mdi/world-wide-web"
       /* overflow-x: hidden; */
     }
   </style>
+
+
+<script is:inline>
+
+function showDevelopers(position) {
+  const cards = document.querySelectorAll('#developer-card');
+
+  cards.forEach(card => {
+    const cardPosition = card.getAttribute('position');
+    card.style.display = (position === 'All' || (cardPosition && cardPosition.includes(position))) ? 'block' : 'none';
+  });
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
 </Layout>
