@@ -86,7 +86,7 @@ export const NavBar = (props) => {
                   href="/careers"
                   class="text-swans-50 hover:bg-gray-700 hover:text-swans-500 px-3 py-2 rounded-md text-sm font-bold"
                 >
-                  CAREER
+                  CAREERS
                 </a>
                 <a class="px-3" href="#download">
                   {props.get_app_btn}
@@ -152,10 +152,10 @@ export const NavBar = (props) => {
             </a>
 
             <a
-              href="/career"
+              href="/careers"
               class="text-gray-300  hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Career
+              Careers
             </a>
             <a
               href="#download"
