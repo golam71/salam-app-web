@@ -94,7 +94,7 @@ export const NavBar = (props) => {
                     type="button"
                     class="inline-flex items-center px-6 py-2 border border-transparent shadow-sm text-base font-bold rounded-md text-black bg-aquamarine hover:bg-aquamarine-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-aquamarine-300"
                   >
-                    <p className="mx-1">Salam App</p>
+                    <p className="mx-1">Download</p>
                     <div className="flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
